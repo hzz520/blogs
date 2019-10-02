@@ -1,0 +1,13 @@
+{
+  "About.js": "js/About-d523199a.js",
+  "Detail.js": "js/Detail-355bee91.js",
+  "Home.js": "js/Home-9a655777.js",
+  "Myblog.js": "js/Myblog-9cf32d54.js",
+  "Publish.js": "js/Publish-799050b1.js",
+  "UserInfo.js": "js/UserInfo-cd76f186.js",
+  "common/manifest.js": "common/manifest-82d52d31.js",
+  "common/vendors.js": "common/vendors-fb89c47b.js",
+  "index.css": "css/index-65a8d138.css",
+  "index.js": "js/index-7920d20b.js",
+  "vendors.js": "js/vendors-859396c4.js"
+}
