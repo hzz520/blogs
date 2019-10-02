@@ -1,0 +1,23 @@
+.alert {
+    position: fixed;
+    z-index: 999;
+    left:50%;
+    top: 50%;
+    font-size: 16px;
+    margin:-20px 0 0 -200px;
+    width: 400px;
+    min-height: 50px;
+    line-height: 50px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    transform: scale(0);
+    text-align: center;
+    transition: transform  0.2s ease-in
+}
+.show{
+    transform: scale(1);
+    opacity: 1
+}
+.hid{
+    opacity: 0
+}

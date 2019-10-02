@@ -1,0 +1,13 @@
+@import './variable.scss';
+
+.container {
+    margin: $mtb10;
+    h1{
+        text-align: center;
+        font-weight: 700
+    }
+    h2{
+        font-weight: 700;
+        font-size: 21px;
+    }
+}

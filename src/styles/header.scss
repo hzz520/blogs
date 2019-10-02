@@ -1,0 +1,64 @@
+@import './variable.scss';
+$h:30px;
+$h1:100px;
+
+.header {
+    .topTips{
+       height: $h;
+       line-height: $h;
+       background: $lightgray;
+       text-align: right;
+       font-size: 12px;
+       .welcome {
+            box-sizing: border-box;
+            .isLogin {
+                color: red;
+                float: left;
+            }
+            a{
+                color: $blue
+            }
+       }
+       
+    }
+    
+    
+    .logo {
+        height: $h1;
+        line-height: $h1;
+        box-sizing: border-box;
+        a {
+            font-size: 30px;
+            color: $blue;
+            display: inline-block
+        }
+        .serchForm {
+            float: right;
+            input,input+div {
+                height: $h;
+                line-height: $h;
+            }
+            input {
+                border: 1px solid $blue;
+                vertical-align: middle;
+                width: 200px;
+                font-size: 12px;
+                padding: 0 10px;
+            }
+            .btn{
+                display: inline-block;
+                width:50px;
+                border: 1px solid $blue;
+                text-align: center;
+                cursor: pointer;
+                margin-left: 5px;
+                font-size: 14px;
+                vertical-align: middle;
+                &:hover{
+                    background: $blue;
+                    color:#fff
+                }
+            }
+        }
+    }
+}

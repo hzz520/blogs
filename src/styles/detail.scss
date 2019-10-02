@@ -1,0 +1,218 @@
+@import './variable.scss';
+
+.container{
+    $width:900px;
+    margin: $mtb10;
+    >h1{
+        color: $blue;
+        text-align: center;
+        font-size: 24px;
+        line-height: 1.5;
+        font-weight: 700
+    }
+    .info{
+        margin: $mtb10;
+        color: $lightblack;
+    }
+    .main{
+        white-space: pre-wrap;
+        .coverImg{
+            text-align: center;
+            overflow: hidden;
+            img{
+              max-width: $width; 
+            }
+        }
+        p{
+            font-size: 15px;
+            color:#444
+        }
+    }
+    .messageBox{
+        margin-bottom: 30px;
+        h2{
+            margin-top:50px;
+            border-bottom: 1px solid $gray;
+            color: $black;
+            padding-bottom:10px;
+            margin-bottom:40px;
+            &:first-of-type{
+                padding-bottom: 20px;
+                margin-bottom: 10px;
+            }
+        }
+        .commentBox{
+            border-bottom:1px dashed #ccc;
+            padding:15px 0 20px 0; 
+            overflow: hidden;
+            .userInfo{
+                float: left;
+                width:100px;
+                text-align: center;
+                padding: 15px 0;
+                img{
+                    width: 80px;
+                    height:80px;
+                }
+                .name{
+                    color: $black;
+                    margin-top:10px
+                }
+            }
+            .replyBox{
+                margin-left: 100px;
+                padding: 0 0 8px 20px;
+                overflow: hidden;
+                >p{
+                    margin:20px 20px 0 0;
+                    min-height:90px;
+                }
+                .timeInfo{
+                    text-align: right;
+                    margin-right: 20px;
+                    span{
+                        color:#999;
+                        display: inline-block;
+                        &.delete{
+                            cursor: pointer;
+                        }
+                        &.floor{
+                            margin:0 10px;
+                        }
+                        &:last-of-type{
+                            margin-left: 10px;
+                            color:$blue1;
+                            cursor:pointer;
+                            background:$white;
+                            border:1px solid #ddd;
+                            border-bottom: none;
+                            position: relative;
+                            z-index: 2;
+                            padding: 5px 15px;
+        
+                        }
+                        &.hid{
+                            background: #fff;
+                            border: none
+                        }
+
+                    }
+                }
+                .replyDetails{
+                    &.hid{
+                        display: none;
+                    }
+                    font-size: 12px;
+                    padding:15px 20px 10px 20px;
+                    background:$white;
+                    border:1px solid #ddd;
+                    margin:-1px 20px 0 20px;
+                    overflow: hidden;
+                    .item {
+                        padding: 10px 0;
+                        margin-bottom: 5px;
+                        border-bottom: 1px dashed #ccc;
+                        img{
+                            width: 32px;
+                            height:32px;
+                            padding: 1px;
+                            border:1px solid #ccc;
+                            float: left;
+                        }
+                        >div{
+                            margin-left: 40px;
+                            p{
+                                // margin-bottom:5px;
+                                .answerBy{
+                                    color: $blue1
+                                }
+                            }
+                            >div{
+                                cursor: pointer;
+                                text-align: right;
+                                span{
+                                    margin-left: 5px;
+                                    color:#999;
+                                    &.del{
+                                        margin-right:5px;
+                                        display: none;
+                                    }
+                                }
+                                &:hover .del{
+                                    display: inline-block
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+                textarea{
+                    &.hid{
+                        display: none
+                    }
+                    width: 100%;
+                    height: 42px;
+                    overflow-y: scroll;
+                    margin-top:30px;
+                    border:1px solid #ddd;
+                    padding: 5px;
+                    font-size: 13px;
+                    resize: none
+                }
+                .showTextarea{ 
+                    cursor: pointer;
+                    display: inline-block;
+                    float: right;
+                    padding: 5px 10px;
+                    border: 1px solid #ddd;
+                    margin-top:10px;
+                    cursor:pointer;
+                    &.hid{
+                        display: none
+                    }
+                }
+                .publish{
+                    &.hid{
+                        display: none
+                    }
+                    cursor: pointer;
+                    width: 60px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    background: $blue;
+                    color: #fff;
+                    float: right;
+                    margin-top:5px
+                }
+            }
+        }
+        .formItem{
+            overflow: hidden;
+            label{
+                font-size: 16px;
+                float: left
+            }
+            .inputDiv{
+                margin-left: 50px;
+                textarea{
+                    width:500px;
+                    padding: 5px;
+                    border: 1px solid #ccc;
+                    line-height: 1.5
+                }
+            }
+        }
+        .btn{
+            margin-left: 50px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #fff;
+            background: $blue;
+            font-size: 18px;
+            width:250px;
+            margin-top:20px
+        }
+    }
+}

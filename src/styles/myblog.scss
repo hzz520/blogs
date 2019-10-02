@@ -1,0 +1,10 @@
+@import './variable.scss';
+
+.container{
+    margin: $mtb10;
+    min-height: 450px;
+    &.null{
+        line-height: 450px;
+        text-align: center
+    }
+}

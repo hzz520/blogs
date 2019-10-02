@@ -1,0 +1,24 @@
+@import './variable.scss';
+$height:80px;
+
+.footer {
+    position: static;
+    width: 100vw;
+    height: $height;
+    background: $blue;
+    text-align: center;
+    span ,a{
+        color:white;
+        font-size: 14px;
+        line-height: $height;
+    }
+}
+
+@media screen and (min-height:715px) {
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0
+    }
+}
+

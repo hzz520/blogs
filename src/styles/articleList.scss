@@ -1,0 +1,46 @@
+@import './variable.scss';
+
+ul[data-cls='articleList']{
+    min-height: 450px;
+    li{
+        padding: $ptb10;
+        &[data-cls='null']{
+            line-height: 450px;
+            text-align: center;
+            border: none
+        }
+        border-bottom:1px solid $blue;
+        a{
+            div{
+                
+                &[data-cls='title']{
+                    color:$blue;
+                    font-size: 15px;
+                }
+                &[data-cls='content'] {
+                    color: $black;
+                    margin: $mtb10;
+                    font-size: 14px;
+                }
+            }
+        }
+        &:hover >div span[data-cls='del']{
+            display: inline-block
+        }
+        &>div{
+            span[data-cls='del']{
+                color: red;
+                display: none;
+                cursor:pointer;
+                margin-left: 15px
+            }
+            
+            a{
+                color:$black;
+                &:hover{
+                    text-decoration: underline
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+@import './variable.scss';
+
+.model{
+    &.hid{
+        display: none
+    }
+    .modelbg{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.6);
+    }
+    .panel{
+        position: absolute;
+        width:450px;
+        top:200px;
+        left:50%;
+        margin-left: -225px;
+        background: #fff;
+        padding: 30px 60px; 
+        i{
+            position: absolute;
+            right: 0;
+            top:0;
+            font-size: 30px;
+            font-family: '黑体';
+            width: 50px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer
+        }
+        .title{
+            margin-bottom: 30px;
+            font-size: 20px;
+            color: $blue;
+        }
+        >input{
+            width:150px;
+            height: 40px;
+            line-height: 40px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 50px;
+            text-align: center;
+            background: $blue;
+            border: none;
+            color: #fff
+        }
+        .item{
+            line-height: 40px;
+            margin-top: 15px;
+            label{
+                float: left;
+                width: 80px;
+            }
+            .inputDiv{
+                margin-left:80px;
+                input{
+                    width: 100%;
+                    border:1px solid $gray;
+                    padding: 0 5px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
